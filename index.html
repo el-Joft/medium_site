@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> Medium</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Patua+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Duru+Sans|Josefin+Sans|Ropa+Sans" rel="stylesheet">
+    <link rel="icon" type="images/png" href="C:\Users\KINGS  COURT\Documents\Programming\web dev\the medium design\images\medium.png">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="js/animsition/animsition.min.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+
+</head>
+<!--<script>
+    $('#myModal').on('shown.bs.modal', function register() {
+        $('#myInput').focus()
+    })
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                document.getElementById('ajax').innerHTML = xhr.responseText;
+            }
+
+            //if (xhr.status === 404) 
+            //file not found
+            // } else if (xhr.status === 500) {
+            //server had a problem
+        }
+
+    }
+    };
+    xhr.open('GET', 'index.html');
+
+    function sendAJAX() {
+        xhr.send();
+        document.getElementById('side2').style.display = "none";
+    }
+</script>-->
+
+<body>
+    <header class="main-header">
+        <div class="heads">
+            <div class="pix">
+                <a href="https://medium.com/"><img class="img" src="C:\Users\KINGS  COURT\Documents\Programming\web dev\the medium design\images\medium_logo-256.png" width="35" height="35"></a>
+                <a href="https://medium.com/"><svg class="svgIcon-use" width="95" height="45" viewBox="8 18 95 45"><path d="M38.926 37.656c-3.187 0-5.652 2.02-5.652 5.575 0 4.07 2.87 5.73 5.73 5.73 1.67 0 3.238-.43 4.58-1.38.13-.1.153-.17.08-.31l-.67-1.22c-.075-.14-.175-.14-.3-.07-1.244.7-2.262 1.02-3.478 1.02-1.472 0-3.21-.7-3.438-3.04 0-.02 0-.07.08-.07h8.072c.247 0 .227-.41.227-.78 0-3.92-2.46-5.43-5.197-5.43h-.034zm2.59 4.43h-5.578c-.1 0-.074-.098-.074-.12.25-1.434 1.37-2.383 3.014-2.383 1.64 0 2.713 1.117 2.713 2.43 0 .05-.02.07-.07.07v.01-.006zm-14.04-7.872l-4.41 8.1c-.028.05-.053.05-.078 0l-4.41-8.1a.376.376 0 0 0-.352-.195h-3.023c-.13 0-.203.07-.203.19V48.6c0 .123.076.196.202.196h2.116c.126 0 .203-.073.203-.196v-9.07c0-1.05-.02-2.025-.05-2.513 0-.05.08-.074.11 0 .25.634.66 1.44 1.06 2.17l3.66 6.588c.08.13.15.178.3.178h.89c.16 0 .23-.05.31-.168l3.66-6.58c.41-.73.81-1.532 1.06-2.164.03-.07.11-.05.11 0-.02.5-.05 1.47-.05 2.52v9.08c0 .13.08.2.21.2h2.11c.13 0 .21-.07.21-.19V34.22c0-.118-.07-.188-.19-.188h-3.05c-.19-.01-.29.063-.37.184zm68.022 5.29c-.697-1.29-2.04-1.846-3.686-1.846-1.494 0-2.862.508-3.932 1.53-.798-1.022-1.967-1.533-3.387-1.533-1.343 0-2.415.336-3.436 1.067l-1.717-.86c-.307-.148-.504 0-.504.267v10.45c0 .11.07.18.197.18h2.085c.12 0 .198-.08.198-.2v-6.72c0-.64.05-.92.365-1.27.55-.59 1.38-.9 2.22-.9 1.4 0 2.26.78 2.26 2.21v6.67c0 .12.07.2.2.2h2.09c.12 0 .2-.08.2-.2v-6.72c0-.63.05-.93.38-1.28.55-.59 1.37-.9 2.22-.9.92 0 1.61.34 1.99 1 .17.34.28.78.28 1.39v6.5c0 .12.07.2.2.2h2.09c.12 0 .2-.08.2-.2v-6.43c0-1.25-.2-2.03-.52-2.66l.04.02zM56.928 33.2h-2.09c-.126 0-.2.072-.2.195v4.794c0 .07-.025.09-.1.07-.94-.39-1.84-.61-2.885-.61-3.16 0-5.53 2.04-5.53 5.55 0 3.95 2.49 5.75 5.33 5.75 1.35 0 2.394-.34 3.463-1.07l1.72.85c.295.15.498 0 .498-.27V33.4c0-.12-.074-.196-.202-.196V33.2l-.004-.007zm-2.29 11.54c0 .61-.024.877-.448 1.268-.796.73-1.644.924-2.415.924-1.413 0-3.132-.83-3.132-3.705 0-2.34 1.343-3.557 3.142-3.557.9 0 1.67.198 2.34.75.476.387.525.732.525 1.552v2.747l-.01.02zm20.99-6.94h-2.09c-.12 0-.193.074-.193.196v6.745c0 .62-.025.88-.422 1.28-.795.73-1.67.93-2.564.93-1.08 0-1.82-.38-2.17-1.09-.15-.31-.23-.73-.23-1.36v-6.49c0-.11-.08-.19-.2-.19h-2.09c-.13 0-.21.08-.21.2v6.58c0 1.03.15 1.71.41 2.27.67 1.44 2.14 2.12 4.11 2.12 1.44 0 2.54-.34 3.63-1.07l1.69.85c.29.14.49 0 .49-.27V38c0-.117-.08-.186-.2-.186h-.01l.02-.014zm-14.243-4.65c-.82 0-1.47.61-1.47 1.364 0 .755.653 1.363 1.474 1.363.82 0 1.47-.608 1.47-1.363s-.64-1.364-1.47-1.364h-.01zm1.047 4.65H60.34c-.125 0-.2.074-.2.196v10.592c0 .122.075.195.2.195h2.085c.125 0 .2-.073.2-.195V37.996c0-.122-.075-.195-.2-.195h.007z"></path></svg></a>
+
+            </div>
+            <div class="search">
+                <div class="contain">
+                    <a class="sign-in too" data-toggle="modal" data-target="#myModal" href="https://medium.com/m/signin?redirect=https%3A%2F%2Fmedium.com%2F">Sign in/ Sign up</a>
+
+                    <svg class="svgIcon-use" width="38" height="25" viewBox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg>
+                    <!-- <input class="js-predictiveSearchInput textInput textInput--rounded textInput--darkText u-baseColor--textNormal textInput--transparent  u-lineHeight30 u-height32 u-verticalAlignMiddle" type="search" placeholder="Search Medium" required="true">-->
+                </div>
+                <a class="write too" data-toggle="modal" data-target="#myModal" href="https://medium.com/m/signin?redirect=https%3A%2F%2Fmedium.com%2F">write a story</a>
+                <!--<a class="write too" href="https://medium.com/new-story">write a story</a>-->
+            </div>
+        </div>
+        <div class="navi-bar">
+            <ul class="main-nave">
+                <li class="item-1 nav "><a href="https://medium.com/ ">For you</a></li>
+                <li class="item-2 nav "><a href="https://medium.com/browse/49c2507259ba ">Editors’ picks</a></li>
+                <li class="item-3 nav "><a href="https://medium.com/browse/d9e30c23b55b ">Reading roulette</a></li>
+                <li class="item-4 nav "><a href="https://medium.com/browse/73495e198969 ">Bed head</a></li>
+                <li class="item-5 nav "><a href="https://medium.com/browse/b32c30f81c16 ">Stolen identity</a></li>
+                <li class="item-6 nav "><a href="https://medium.com/browse/ed445d57c7b5 ">Politics</a></li>
+                <li class="item-7 nav "><a href="https://medium.com/browse/27f4964d9a33 ">Poetry</a></li>
+                <li class="item-8 nav "><a href="https://medium.com/browse/226e1c506ab5 ">Top stories</a></li>
+                <li class="item-9 nav "><a href="https://medium.com/browse/bookmarks ">Bookmarks</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+
+        <div class="medium container-one ">
+            <div class="item ">
+                <h1 class="heading2">Medium is home to the world’s curious minds. From the clever to the controversial, find ideas worth making time for.</h1>
+                <a class="button " href="https://medium.com/m/signin?redirect=https%3A%2F%2Fmedium.com%2F " data-action="sign-in-prompt " data-redirect="https://medium.com/ " data-action-source="promo---home_hero-----minimalist_home_sign_in_tnt ">Get started</a>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="side col-md-4 col-lg-4 col-md-offset-4 columns ">
+                    <div class="cole group ">
+
+                        <div class="span ">
+                            <h3 class="other-side ">Editor's Picks</h3>
+                            <span class="span-a ">Homegrown, handpicked, and served fresh.</span>
+                        </div>
+                        <div class="identity ">
+                            <img class="ui-faces " src="images/mei.jpeg " alt="yan mei ">
+                            <div class="set ">
+                                <p class="names ">The People’s Republic of Burnout</p>
+                                <a href="https://medium.com/@meiyan.ym ">Yan Mei</a>
+                            </div>
+                        </div>
+
+                        <div class="identity ">
+                            <img class="ui-faces " src="images/a.jpg " alt="Conor ">
+                            <div class="set ">
+                                <p class="names ">On the Frontline: Saving Liberia’s Forgotten Chimpanzees</p>
+                                <a href="# ">Conor Gask</a>
+                            </div>
+                        </div>
+
+                        <div class="identity ">
+                            <img class="ui-faces " src="images/c.jpeg " alt="chelsea ">
+                            <div class="set ">
+                                <p class="names ">Looking Forward</p>
+                                <a href="# ">Chelsea Manning</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="span ">
+                                <h3 class="other-side read ">Reading roulette</h3>
+                                <span class="span-b ">A smorgasbord of stories you may have<br> missed this week.</span>
+                            </div>
+                            <div class="identity ">
+                                <img class="ui-faces2 " src="images/pix.png " alt="DepositPhotos ">
+                                <div class="set ">
+                                    <p class="names ">Lessons I learned while working for a mobile stock photos service</p>
+                                    <a href="# ">DepositPhotos</a>
+                                </div>
+                            </div>
+                            <div class="identity ">
+                                <img class="ui-faces2 " src="images/pix2.jpeg " alt="pix-2 ">
+                                <div class="set ">
+                                    <p class="names ">The AMA Does Not Speak for Us</p>
+                                    <a href="# ">ClinicianAction</a>
+                                </div>
+                            </div>
+                            <div class="identity ">
+                                <img class="ui-faces2 " src="images/ik.jpeg " alt="pix-3 ">
+                                <div class="set ">
+                                    <p class="names ">Finding Sympathy for the Devil in Madagascar</p>
+                                    <a href="# ">Edward Banchs</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="span ">
+                                    <h3 class="other-side read ">World AIDS Day</h3>
+                                    <span class="span-c ">It isn't over.</span>
+                                </div>
+                                <div class="identity ">
+                                    <img class="ui-faces2 " src="images/ik2.png " alt="pix-4 ">
+                                    <div class="set ">
+                                        <p class="names "> Unbroken Spirit: HIV and Hunger in Zimbabwe</p>
+                                        <a href="# "> World Food Programme</a>
+                                    </div>
+                                </div>
+                                <div class="identity ">
+                                    <img class="ui-faces2 " src="images/ik3.jpeg " alt="pix-5 ">
+                                    <div class="set ">
+                                        <p class="names "> HIV’s Patient Zero Who Wasn’t</p>
+                                        <a href="# "> Nathan Collins</a>
+                                    </div>
+                                </div>
+                                <div class="identity ">
+                                    <img class="ui-faces2 " src="images/ik4.png " alt="pix-6 ">
+                                    <div class="set ">
+                                        <p class="names "> Power for Power’s Sake</p>
+                                        <a href="# "> Sarah Turbow</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side2 col-md-6 col-lg-6">
+                    <div class=" group ">
+                        <div class="first rol ">
+                            <div class="semi ">
+                                <img class="image-a " src="images/a.jpg " alt="image-a " width="40 " height="40 ">
+                                <div class="part-1 ">
+                                    <span class="name ">N Ziehl</span>
+                                    <span><time datetime="2016-11-27T17:04:42.412Z " >3 days ago . 4 min read</time></span>
+                                </div>
+                            </div>
+                            <h3 class="heading-3 ">Coping with Chaos in the White House</h3>
+                            <p>A few days ago, I wrote a post for my Facebook friends about my personal experience with narcissistic personality disorder and how I view the president elect as a result. Unexpectedly, the post traveled widely, and it became
+                                clear that many people are struggling…</p>
+                            <a class="read-more">read more....</a>
+                            <div class="bottom-icon" width="25 " height="25 " viewBox="0 0 25 25">
+                                <!--<span class="glyphicon glyphicon-heart-empty lefti"></span>-->
+                                <!--<img src="images/the-heart.png" class="lefti" alt="heart" width="20" height="20">-->
+                                <i class="fa fa-heart-o lefti" aria-hidden="true" fill-rule="evenodd "> 522</i>
+                                <!--<p> 118</p>-->
+                                <div class="rite">
+                                    <span>2 reponses  </span>
+                                    <span class="glyphicon glyphicon-bookmark"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="second rol ">
+                            <div class="semi ">
+                                <img class="image-b " src="images/b.jpg " alt="image-b ">
+                                <div class="part-1 ">
+                                    <span class="name ">Anna Graham Hunter</span>
+                                    <span><time datetime="2016-11-27T17:04:42.412Z " >3 days ago . 12 min read</time></span>
+                                </div>
+                            </div>
+                            <h3 class="heading-3 ">Nailing Studs</h3>
+                            <img class="img-responsive main-img" src="images/abc.jpeg " alt="nails " width="90% " height="300 ">
+                            <h4 class="heading-4">My last year at Smith I decide to become a carpenter. I’ve had it with abstract thought and decide that true fulfillment will come…</h4>
+                            <a class="read-more">read more....</a>
+                            <div class="bottom-icon">
+                                <i class="fa fa-heart-o lefti" aria-hidden="true"> 78</i>
+                                <!--<p>118</p>-->
+                                <div class="rite">
+                                    <span>82 reponses</span>
+                                    <span class="glyphicon glyphicon-bookmark"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third rol ">
+                            <div class="semi ">
+                                <img class="image-c " src="images/c.jpeg " alt="image-c ">
+                                <div class="part-1 ">
+                                    <span class="name ">Charlie Beckett</span>
+                                    <span><time datetime="2016-11-27T17:04:42.412Z " >yesterday . 5 min read</time></span>
+                                </div>
+                            </div>
+                            <h3 class="heading-3 ">How should you report something that isn’t true?</h3>
+                            <h4 class="heading-4">How do you report rumours or baseless allegations? Should you ignore them completely or is the job of journalism to bust myths and correct misinformation?</h4>
+                            <a class="read-more">read more....</a>
+                            <div class="bottom-icon">
+                                <i class="fa fa-heart-o lefti" aria-hidden="true">  17</i>
+                                <!--<p>118</p>-->
+                                <div class="rite">
+                                    <span></span>
+                                    <span class="glyphicon glyphicon-bookmark"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fourth rol ">
+                            <div class="semi ">
+                                <img class="image-d " src="images/d.jpeg " alt="image-d ">
+                                <div class="part-1 ">
+                                    <span class="name ">Heather Arthur</span>
+                                    <span><time datetime="2016-11-27T17:04:42.412Z " > 5 days ago . 3 min read</time></span>
+                                </div>
+                            </div>
+                            <h3 class="heading-3 ">Electoral College Worst-Case Scenario</h3>
+                            <h4 class="heading-4">Prenatal/Postpartum/Chronic depression does not make less of a mother.</h4>
+                            <a class="read-more">read more....</a>
+                            <div class="bottom-icon">
+                                <i class="fa fa-heart-o lefti" aria-hidden="true">  3</i>
+                                <!--<p>118</p>-->
+                                <div class="rite">
+                                    <span>10 reponses</span>
+                                    <span class="glyphicon glyphicon-bookmark"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fifth rol ">
+                            <div class="semi ">
+                                <img class="image-e " src="images/e.png " alt="image-e ">
+                                <div class="part-1 ">
+                                    <span class="name ">Dominique Matti in BullshitIst</span>
+                                    <span><time datetime="2016-11-27T17:04:42.412Z " > 2 days ago . 6 min read</time></span>
+                                </div>
+                            </div>
+                            <h3 class="heading-3 ">How To Glow When The Lights Go Out</h3>
+                            <h4 class="heading-4">Harry Potter and the Cursed Transition: Part I</h4>
+                            <img class="img-responsive main-img" src="images/2.jpeg " alt="shine " width="95%" height="260 ">
+                            <a class="read-more">read more....</a>
+                            <div class="bottom-icon">
+                                <i class="fa fa-heart-o lefti" aria-hidden="true">  45</i>
+                                <!--<p>118</p>-->
+                                <div class="rite">
+                                    <span>17 reponses</span>
+                                    <span class="glyphicon glyphicon-bookmark"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sixth rol ">
+                            <div class="semi ">
+                                <img class="image-f " src="images/aba.jpeg " alt="image-f ">
+                                <div class="part-1 ">
+                                    <span class="name ">War Is Boring in War Is Boring</span>
+                                    <span><time datetime="2016-11-27T17:04:42.412Z " > 15 days ago . 9 min read</time></span>
+                                </div>
+                            </div>
+                            <img class="img-responsive main-img" src="images/3.jpeg " alt="image " width="90% " height="260 ">
+                            <h3 class="heading-3 ">Iraq Is Burning </h3>
+                            <h4 class="heading-4">Qayyarah residents live under a cloud of toxic smoke</h4>
+                            <a class="read-more">read more....</a>
+                            <div class="bottom-icon">
+                                <i class="fa fa-heart-o lefti" aria-hidden="true">  37</i>
+                                <!--<p>118</p>-->
+                                <div class="rite">
+                                    <span></span>
+                                    <span class="glyphicon glyphicon-bookmark"></span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="load " data-toggle="modal " data-target="#register " onclick="sendAJAX() ">see more<button>
+                        
+        </div>
+        </div>
+        </div>
+  <!-- Button trigger modal -->
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <!--<h4 class="modal-title " id="myModalLabel">Modal title</h4>-->
+                    <h3 class="jumbotron">
+                        <div class="container con-four">
+                            <img class="mode-1" src="C:\Users\KINGS  COURT\Documents\Programming\web dev\the medium design\images\medium_logo-256.png" width="85" height="85"><br>
+                            <span><svg class="svgIcon-use mode-2" width="151" height="65" viewBox="36 8 151 65"><path d="M83.967 35.705c-5.17 0-9.173 3.356-9.173 9.262 0 6.754 4.657 9.504 9.3 9.504 2.713 0 5.256-.72 7.434-2.3.21-.16.248-.28.13-.52l-1.088-2.03c-.122-.24-.283-.24-.486-.12-2.02 1.18-3.678 1.7-5.656 1.7-2.387 0-5.215-1.17-5.58-5.06 0-.03 0-.12.12-.12h13.094c.404 0 .365-.68.365-1.29 0-6.51-4-9.01-8.447-9.01h-.013zm4.204 7.36h-9.05c-.16 0-.12-.16-.12-.202.41-2.386 2.22-3.964 4.89-3.964 2.67 0 4.41 1.85 4.41 4.03 0 .08-.04.11-.12.11v.01zM65.96 29.668a.608.608 0 0 0-.572.323L58.23 43.45c-.045.08-.086.08-.125 0l-7.16-13.455a.61.61 0 0 0-.572-.322h-4.908c-.205 0-.327.12-.327.324L45.136 53.9c0 .203.123.325.328.325H48.9c.204 0 .326-.122.326-.325V38.822c0-1.742-.04-3.363-.08-4.173 0-.09.12-.13.162 0 .41 1.05 1.064 2.39 1.72 3.6l5.93 10.94c.122.2.245.28.49.28h1.432c.245 0 .37-.08.49-.29l5.93-10.94c.656-1.22 1.31-2.56 1.72-3.61.04-.13.164-.09.164 0-.04.81-.08 2.43-.08 4.17v15.08c0 .2.122.32.327.32h3.44c.21 0 .33-.12.33-.33v-23.9c0-.2-.12-.32-.32-.32h-4.91zm109.826 9.11c-1.13-2.142-3.312-3.07-5.98-3.07-2.425 0-4.646.847-6.383 2.546-1.294-1.7-3.193-2.55-5.497-2.55-2.183 0-3.92.568-5.578 1.78l-2.787-1.414c-.48-.244-.81 0-.81.443v17.35c0 .204.13.326.33.326h3.4c.21 0 .33-.13.33-.33V42.7c0-1.05.08-1.536.61-2.103.89-.97 2.23-1.495 3.6-1.495 2.27 0 3.68 1.294 3.68 3.68v11.082c0 .203.13.325.33.325h3.4c.2 0 .32-.13.32-.33V42.7c0-1.05.08-1.536.61-2.103.89-.97 2.22-1.495 3.6-1.495 1.5 0 2.63.566 3.24 1.66.28.564.44 1.294.44 2.304v10.798c0 .203.12.325.32.325h3.4c.2 0 .32-.13.32-.33V43.18c0-2.062-.32-3.358-.85-4.41zM113.19 28.303h-3.396c-.2 0-.322.123-.322.327v7.964c0 .122-.04.162-.16.122-1.526-.647-2.987-1.01-4.683-1.01-5.13 0-8.98 3.397-8.98 9.22 0 6.56 4.04 9.554 8.65 9.554 2.19 0 3.88-.562 5.62-1.777l2.79 1.418c.48.25.81 0 .81-.44V28.64c0-.203-.12-.327-.33-.327l-.01-.007zm-3.72 19.172c0 1.01-.04 1.456-.726 2.104-1.29 1.21-2.667 1.53-3.92 1.53-2.302 0-5.09-1.38-5.09-6.15 0-3.88 2.18-5.91 5.09-5.91 1.456 0 2.71.32 3.8 1.25.77.65.847 1.21.847 2.58v4.57zm34.067-11.527h-3.394c-.196 0-.314.122-.314.324v11.204c0 1.01-.04 1.456-.69 2.104-1.29 1.213-2.71 1.536-4.16 1.536-1.74 0-2.95-.647-3.52-1.82-.25-.525-.37-1.215-.37-2.264V36.27c0-.2-.12-.323-.32-.323h-3.4c-.2 0-.33.122-.33.324V47.2c0 1.7.24 2.83.68 3.76 1.09 2.387 3.47 3.52 6.66 3.52 2.35 0 4.12-.567 5.9-1.78l2.75 1.416c.49.24.81 0 .81-.445v-17.4c0-.2-.12-.32-.32-.32h-.01zm-23.116-7.723c-1.33 0-2.38 1.01-2.38 2.263 0 1.255 1.05 2.265 2.39 2.265s2.39-1.01 2.39-2.265c0-1.255-1.04-2.265-2.38-2.265v.002zm1.7 7.723h-3.39c-.2 0-.32.122-.32.324v17.594c0 .203.12.325.33.325h3.4c.21 0 .33-.12.33-.32v-17.6c0-.2-.12-.32-.32-.32z"></path></svg></span>
+                        </div>
+                    </h3>
+                    <h5 class="mode-3">Sign in to Medium to connect with voices and perspectives that matter.</h5>
+
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary btn-lg btn-block ">
+                        <span class="tweet clearfix">
+                            <img src="images/images-4.png" class="img-responsive tweet-img" alt="Responsive image" width="25" height="25">
+                            <div class="tweet-1">
+                            <p class="connect-text">Connect with Twitter</p>
+                            <p class="connect-font">We won't post without asking</p></span>
+                            
+                            </div>
+                        </button><br>
+                    <button type="button" class="btn btn-primary btn-lg btn-block ">
+                        <span class="tweet clearfix">
+                            <img src="images/fb.png" class="img-responsive tweet-img" alt="Responsive image" width="24" height="25">
+                            <div class="fb-1">
+                            <p class="connect-text">Connect with facebook</p>
+                            <p  class="connect-font">We won't post without asking</p></span>
+                            </div>
+                        </button><br>
+                    <button type="button" class="btn btn-primary btn-lg btn-block ">
+                        <span class="tweet clearfix">
+                            <img src="images/download.png" class="img-responsive gog-img" alt="Responsive image" width="25" height="25">
+                            <div class="gog-1">
+                            <p  class="connect-text">Continue with google</p>
+                            </span>
+                            </div>
+                        </button>
+
+                    <h5 class="mode-3 mde">Sign in or sign up with email</h5>
+                    <p>To use Medium you must have cookies enabled.<br> If you sign up with Twitter or Facebook, we’ll start you off with a network by automatically importing any followers/followees or friends already on Medium. Also, we’ll never post to
+                        Twitter or Facebook without your permission. For more info, please see Login FAQ.</p>
+
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--<footer class="main-footer">
+        <ul>
+            <li>Help</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>About</li>
+        </ul>
+        <div class="box">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </div>-->
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/jquery-3.1.1.min.js"></script>-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/animsition/jquery.animsition.min.js"></script>
+    <script src="js/sticky/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
